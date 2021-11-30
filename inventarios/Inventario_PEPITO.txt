@@ -1,0 +1,2 @@
+producto: Pantalones   ///   cantidad: 2    ///    Mon Nov 29 20:45:51 2021
+producto: Fierros   ///   cantidad: 60    ///    Tue Nov 30 18:06:17 2021

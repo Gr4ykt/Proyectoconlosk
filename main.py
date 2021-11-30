@@ -15,7 +15,7 @@ def def_handler(sig, frame):
 signal.signal(signal.SIGINT, def_handler)
 
 parser = argparse.ArgumentParser(description="Opciones para el sistema de gestion de compras")
-parser.version = 'Beta 1.0'
+parser.version = 'Beta'
 parser.add_argument('--version', action='version')
 parser.add_argument(
                     '-l', '--login',
@@ -42,4 +42,16 @@ if args.login == "Administrador":
 if args.login == "Pepito":
     try_pass("123", "Pepito")
     print("Ingresaste como Pepito")
-    console("PEPITO")
+    console("PEPITO") #PEPITO>> 
+
+#Felipe
+if args.login == "Felipe":
+    try_pass("123", "Felipe")
+    print("Ingresaste como Felipe")
+    console("FELIPE")
+
+#Andres
+if args.login == "Andres":
+    try_pass("hola123", "Andres")
+    print("Ingresaste como Andres")
+    console("ANDRES")

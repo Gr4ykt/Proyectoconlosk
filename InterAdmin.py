@@ -6,6 +6,7 @@ from time import sleep
 from UserList import existe_usuario
 import UserList
 from getpass import getpass
+from InventarioFunc import Inventario
 
 def console_admin():
     while True:
@@ -50,11 +51,29 @@ if args.login == "{1}":
             print("[!] Se ha creado el nuevo usuario")
             UserList.lista.extend(user_complete)
 
+        elif console == "help":
+            print_help = """
+            exit/quit/salir     Cierra el programa
+            clear               Limpia la terminal
+            whoami              Imprime el usuario que se esta utilizando
+            ireal               Dice si un usuario existe
+            list user           lista a los usuarios existentes
+            add user            agregar nuevo usuario(solo disponible para el admin)
+            """
+            print(print_help)
+
         else:
             print("[!] Comando no reconocido\n")
 
 def console(name):
+    #poc( Prueba de concepto )
+    # Pepito_inventario.txt
+    # open(name+"_inventario.txt", "a")
+
+    # open("Admin_inventario.txt", "a")
+
     while True:
+        #PEPITO>> 
         prompt = name+">> "
         console = str(input(prompt))
 
@@ -67,9 +86,18 @@ def console(name):
         elif console == "clear":
             system("cls")# Limpieza de terminal
 
+        elif console == "help":
+            print_help = """
+            exit/quit/salir     Cierra el programa
+            clear               Limpia la terminal
+            whoami              Imprime el usuario que se esta utilizando
+            buycompany          Comprar o listar las compras del usuario
+            """
+            print(print_help)
+
         elif console == "buycompany":
             #va todo lo que estan haciendo ustedes
-            pass
+            Inventario(name)
 
         else:
             print("[!] Comando no reconocido\n")

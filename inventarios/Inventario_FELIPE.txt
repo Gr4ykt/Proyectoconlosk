@@ -1,0 +1,6 @@
+producto: Coca Cola   ///   cantidad: 15    ///    Mon Nov 29 20:53:01 2021
+producto: Loto   ///   cantidad: 15    ///    Mon Nov 29 20:56:05 2021
+producto: Zapatos   ///   cantidad: 56    ///    Mon Nov 29 20:57:37 2021
+producto: Camisas   ///   cantidad: 15    ///    Mon Nov 29 20:58:45 2021
+producto: Computadora   ///   cantidad: 45    ///    Mon Nov 29 20:59:41 2021
+producto: Pasta   ///   cantidad: 65    ///    Mon Nov 29 21:00:36 2021
